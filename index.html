@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁標題</title>
+    <style>
+        body {
+            background-color: #FFFFDF; 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+        }
+        .header {
+            width: 100%;
+            text-align: center;
+            background-color: #FFFFDF; 
+            position: fixed; 
+            top: 0; 
+            left: 0;
+            z-index: 1000; 
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+            max-width: 1858px; 
+        }
+        .nav {
+            text-align: center; 
+            padding: 10px 20px; 
+            margin-top: 175px; 
+        }
+        .nav button {
+            background-color: #FFFFFF; 
+            border: 1px solid #5B5B5B; 
+            color: #5B5B5B; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            margin: 5px; 
+            cursor: pointer; 
+            display: inline-block;         }
+        .image-container {
+            text-align: center; 
+            padding: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-width: 1195px;         }
+        .content {
+            padding: 20px;         }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="期末素材1.jpg" alt="標題圖片">
+    </div>
+    <div class="nav">
+        <button onclick="changeImage('期末素材3.jpg')">吉伊卡哇</button>
+        <button onclick="changeImage('期末素材4.jpg')">小八</button>
+        <button onclick="changeImage('期末素材5.jpg')">烏薩奇</button>
+        <button onclick="changeImage('期末素材6.jpg')">小桃</button>
+        <button onclick="changeImage('期末素材7.jpg')">海獺勇者</button>
+        <button onclick="changeImage('期末素材8.jpg')">栗子饅頭前輩</button>
+    </div>
+    <div class="image-container">
+        <img id="mainImage" src="期末素材2.jpg" alt="插入圖片">
+    </div>
+    <div class="content">
+    </div>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('mainImage').src = imageSrc;
+        }
+    </script>
+</body>
+</html>
+
